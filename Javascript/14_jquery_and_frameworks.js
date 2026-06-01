@@ -6,7 +6,6 @@ $('#registerBtn').click(function () {
 
   // Use .fadeOut() and .fadeIn() for event cards
   $('#eventCards .card').first().fadeOut(300, function () {
-    // after fadeOut, show it again
     $(this).fadeIn(300);
   });
 });

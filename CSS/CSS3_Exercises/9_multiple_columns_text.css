@@ -1,0 +1,11 @@
+/*
+  Exercise 9: Multiple Columns in Text (CSS3 Multi-column)
+*/
+
+/* News/article section like a newspaper */
+.news-article {
+  column-count: 2;
+  column-gap: 30px;
+  column-rule: 1px solid gray;
+}
+

@@ -1,7 +1,4 @@
-// 5) Objects and Prototypes
 const out = document.getElementById('out');
-
-// Event constructor (function + prototype) so the checkAvailability requirement is explicit
 function Event(name, date, seats, category) {
   this.name = name;
   this.date = date;

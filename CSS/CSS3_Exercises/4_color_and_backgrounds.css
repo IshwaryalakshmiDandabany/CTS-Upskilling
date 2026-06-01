@@ -1,0 +1,29 @@
+/*
+  Exercise 4: Color & Background Styling
+  Uses HEX and RGBA, plus gradients.
+*/
+
+/* Background image with fallback color */
+body {
+  background-color: #f3f4f6; /* fallback color */
+  background-image: url('https://picsum.photos/seed/city-theme/1600/900');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Gradient section header */
+.section-header {
+  color: #ffffff;
+  background: linear-gradient(90deg, #0b57d0, rgba(99, 102, 241, 0.8));
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+}
+
+/* Example of HEX + RGBA */
+.description {
+  color: #1f2937; /* HEX */
+  background: rgba(255, 255, 255, 0.75); /* RGBA */
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+}
+

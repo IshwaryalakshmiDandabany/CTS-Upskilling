@@ -1,0 +1,36 @@
+/*
+  Exercise 2: CSS Syntax and Comments
+
+  Includes clean formatting and descriptive comments.
+*/
+
+/* Style for main CTA button */
+.cta-button {
+  background-color: #007bff;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #0069d9;
+}
+
+/* Style for cards/sections */
+.section-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 1rem;
+  margin: 0.75rem 0;
+}
+
+/* Style for secondary text */
+.muted {
+  color: #6b7280;
+  font-size: 0.98rem;
+}
+

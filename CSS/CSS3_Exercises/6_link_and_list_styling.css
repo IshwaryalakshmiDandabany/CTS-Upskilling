@@ -1,0 +1,36 @@
+/*
+  Exercise 6: Link and List Styling
+*/
+
+/* Links pseudo-classes */
+a:link {
+  color: #0b57d0;
+}
+
+a:visited {
+  color: #6d28d9;
+}
+
+a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #ef4444;
+}
+
+/* Remove bullets from nav menus */
+nav ul {
+  list-style-type: none;
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+}
+
+/* Custom spacing for list items */
+li {
+  margin: 0.35rem 0;
+  padding: 0.2rem 0.2rem;
+}
+

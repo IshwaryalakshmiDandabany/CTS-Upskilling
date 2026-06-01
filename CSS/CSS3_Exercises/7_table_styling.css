@@ -1,0 +1,26 @@
+/*
+  Exercise 7: Table Styling
+*/
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table th,
+table td {
+  border: 1px solid #e5e7eb;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+table th {
+  background-color: #0b57d0;
+  color: #ffffff;
+}
+
+/* Zebra striping */
+table tr:nth-child(even) {
+  background-color: #f0f9ff;
+}
+
