@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JS Exercise 14 - jQuery & Frameworks</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;margin:1.25rem;line-height:1.5}
+    .cards{margin-top:1rem;display:grid;gap:.75rem}
+    .card{border:1px solid #e5e7eb;border-radius:12px;padding:.75rem;display:block}
+    button{padding:.55rem .8rem;border:0;border-radius:10px;background:#0b57d0;color:#fff;font-weight:800;cursor:pointer}
+    button:hover{background:#094aa8}
+    .note{margin-top:1rem;background:#f9fafb;border:1px solid #e5e7eb;border-radius:12px;padding:1rem}
+  </style>
+</head>
+<body>
+  <h1>Local Community Event Portal - JS Exercise 14</h1>
+  <p>This exercise uses jQuery to handle events and fade cards.</p>
+
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <button id="registerBtn" type="button">Register (jQuery click)</button>
+
+  <div class="cards" id="eventCards">
+    <div class="card">Music Night <em>(Register button will fade this card)</em></div>
+    <div class="card">Park Yoga</div>
+    <div class="card">Food Drive</div>
+  </div>
+
+  <div class="note">
+    <strong>One benefit of moving to React or Vue:</strong>
+    They provide component-based UI architecture, making it easier to manage complex interfaces and keep state-driven rendering consistent.
+  </div>
+
+  <script src="14_jquery_and_frameworks.js"></script>
+</body>
+</html>
+

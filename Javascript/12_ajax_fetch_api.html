@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JS Exercise 12 - AJAX & Fetch</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;margin:1.25rem;line-height:1.5}
+    form{max-width:620px;background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:1rem}
+    label{display:block;font-weight:700;margin-top:.75rem}
+    input,select{width:100%;padding:.6rem;margin-top:.35rem;border:1px solid #d1d5db;border-radius:10px;font-size:1rem}
+    .msg{margin-top:1rem;padding:.75rem 1rem;border-radius:12px;font-weight:900}
+    .ok{background:#dcfce7;border:1px solid #86efac}
+    .bad{background:#fee2e2;border:1px solid #fca5a5}
+    .spinner{display:none;margin-top:1rem;padding:.75rem 1rem;border-radius:12px;border:1px solid #e5e7eb;background:#f9fafb}
+    button{margin-top:1rem;padding:.75rem 1rem;border:0;border-radius:10px;background:#0b57d0;color:#fff;font-weight:800;cursor:pointer}
+    button:hover{background:#094aa8}
+  </style>
+</head>
+<body>
+  <h1>Local Community Event Portal - JS Exercise 12</h1>
+  <form id="ajaxForm">
+    <label for="ajaxName">Name</label>
+    <input id="ajaxName" name="name" type="text" required />
+
+    <label for="ajaxEmail">Email</label>
+    <input id="ajaxEmail" name="email" type="email" required />
+
+    <label for="ajaxEvent">Selected Event</label>
+    <select id="ajaxEvent" name="event" required>
+      <option value="">Select...</option>
+      <option value="Jazz Night">Jazz Night</option>
+      <option value="Workshop on Baking">Workshop on Baking</option>
+      <option value="Park Yoga">Park Yoga</option>
+    </select>
+
+    <button type="submit" id="registerBtn">Submit Registration (fetch POST)</button>
+    <div id="ajaxSpinner" class="spinner">Sending registration... ⏳</div>
+    <div id="ajaxMessage" class="msg" style="display:none"></div>
+  </form>
+
+  <script src="12_ajax_fetch_api.js"></script>
+</body>
+</html>
+

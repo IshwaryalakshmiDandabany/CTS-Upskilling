@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JS Exercise 04 - Functions/Closures/HOF</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;margin:1.25rem;line-height:1.5}
+    .row{display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+    select,input{padding:.5rem .6rem;border:1px solid #d1d5db;border-radius:10px}
+    button{padding:.55rem .8rem;border:0;border-radius:10px;background:#0b57d0;color:#fff;font-weight:800;cursor:pointer}
+    button:hover{background:#094aa8}
+    .cards{margin-top:1rem;display:grid;gap:.75rem;}
+    .card{border:1px solid #e5e7eb;border-radius:12px;padding:.75rem}
+    pre{background:#0b1220;color:#e5e7eb;padding:1rem;border-radius:12px;overflow:auto}
+  </style>
+</head>
+<body>
+  <h1>Local Community Event Portal - JS Exercise 04</h1>
+
+  <div class="row">
+    <label>
+      Category:
+      <select id="categorySelect">
+        <option value="">All</option>
+        <option value="music">Music</option>
+        <option value="workshop">Workshop</option>
+        <option value="outdoor">Outdoor</option>
+      </select>
+    </label>
+
+    <label>
+      Quick search:
+      <input id="nameSearch" type="text" placeholder="Type event name..." />
+    </label>
+
+    <button id="registerRandomBtn" type="button">Register First Matching Event</button>
+  </div>
+
+  <div class="cards" id="cards"></div>
+
+  <h3 style="margin-top:1rem">Closure: Total registrations by category</h3>
+  <pre id="closureOut">(output)</pre>
+
+  <script src="04_functions_closures_hof.js"></script>
+</body>
+</html>
+

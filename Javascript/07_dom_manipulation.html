@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JS Exercise 07 - DOM Manipulation</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;margin:1.25rem;line-height:1.5}
+    #cards{display:grid;gap:.75rem;}
+    .card{border:1px solid #e5e7eb;border-radius:12px;padding:.75rem}
+    .row{display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+    button{padding:.55rem .8rem;border:0;border-radius:10px;background:#0b57d0;color:#fff;font-weight:800;cursor:pointer}
+    button:hover{background:#094aa8}
+    .muted{color:#6b7280;font-size:.95rem}
+  </style>
+</head>
+<body>
+  <h1>Local Community Event Portal - JS Exercise 07</h1>
+  <p class="muted">Register and Cancel will update seats and UI dynamically.</p>
+
+  <div class="row">
+    <button type="button" id="resetBtn">Reset Seats</button>
+  </div>
+
+  <div id="cards"></div>
+
+  <script src="07_dom_manipulation.js"></script>
+</body>
+</html>
+

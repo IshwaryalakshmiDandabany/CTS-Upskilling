@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JS Exercise 08 - Event Handling</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;margin:1.25rem;line-height:1.5}
+    .row{display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+    select,input{padding:.5rem .6rem;border:1px solid #d1d5db;border-radius:10px}
+    .cards{margin-top:1rem;display:grid;gap:.75rem}
+    .card{border:1px solid #e5e7eb;border-radius:12px;padding:.75rem}
+    button{padding:.55rem .8rem;border:0;border-radius:10px;background:#0b57d0;color:#fff;font-weight:800;cursor:pointer}
+    button:hover{background:#094aa8}
+    .hint{color:#6b7280}
+  </style>
+</head>
+<body>
+  <h1>Local Community Event Portal - JS Exercise 08</h1>
+
+  <div class="row">
+    <label>
+      Filter category:
+      <select id="categoryFilter" onchange="onCategoryChange()">
+        <option value="all">All</option>
+        <option value="music">Music</option>
+        <option value="workshop">Workshop</option>
+        <option value="outdoor">Outdoor</option>
+      </select>
+    </label>
+
+    <label>
+      Search name (keydown):
+      <input id="nameInput" type="text" placeholder="Press Enter" onkeydown="onNameKeydown(event)" />
+    </label>
+  </div>
+
+  <p class="hint">Buttons use onclick. Filters use onchange and keydown handlers.</p>
+
+  <div class="cards" id="cards"></div>
+
+  <script src="08_event_handling.js"></script>
+</body>
+</html>
+

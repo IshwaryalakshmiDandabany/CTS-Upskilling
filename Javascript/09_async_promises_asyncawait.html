@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JS Exercise 09 - Async JS</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;margin:1.25rem;line-height:1.5}
+    .spinner{display:none;margin-top:1rem;padding:.75rem 1rem;border-radius:12px;border:1px solid #e5e7eb;background:#f9fafb}
+    .cards{margin-top:1rem;display:grid;gap:.75rem}
+    .card{border:1px solid #e5e7eb;border-radius:12px;padding:.75rem}
+    button{margin-top:.5rem;padding:.55rem .8rem;border:0;border-radius:10px;background:#0b57d0;color:#fff;font-weight:800;cursor:pointer}
+    button:hover{background:#094aa8}
+  </style>
+</head>
+<body>
+  <h1>Local Community Event Portal - JS Exercise 09</h1>
+  <p>Mock fetch shows loading spinner using async/await.</p>
+
+  <button id="loadBtn" type="button">Load Events (async)</button>
+  <div id="spinner" class="spinner">Loading events... ⏳</div>
+
+  <div id="cards" class="cards"></div>
+
+  <script src="09_async_promises_asyncawait.js"></script>
+</body>
+</html>
+

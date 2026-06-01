@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JS Exercise 13 - Debugging & Testing</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;margin:1.25rem;line-height:1.5}
+    form{max-width:620px;background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:1rem}
+    label{display:block;font-weight:700;margin-top:.75rem}
+    input,select{width:100%;padding:.6rem;margin-top:.35rem;border:1px solid #d1d5db;border-radius:10px;font-size:1rem}
+    .log{margin-top:1rem;background:#0b1220;color:#e5e7eb;padding:1rem;border-radius:12px;font-family:Consolas,monospace;white-space:pre-wrap;min-height:120px}
+    button{margin-top:1rem;padding:.75rem 1rem;border:0;border-radius:10px;background:#0b57d0;color:#fff;font-weight:800;cursor:pointer}
+    button:hover{background:#094aa8}
+  </style>
+</head>
+<body>
+  <h1>Local Community Event Portal - JS Exercise 13</h1>
+  <p>Use Console + Network tab. Try clicking submit and see logged payload steps.</p>
+
+  <form id="debugForm">
+    <label for="dbgName">Name</label>
+    <input id="dbgName" name="name" required value="Taylor" />
+
+    <label for="dbgEmail">Email</label>
+    <input id="dbgEmail" name="email" type="email" required value="taylor@example.com" />
+
+    <label for="dbgEvent">Event</label>
+    <select id="dbgEvent" name="event" required>
+      <option value="Jazz Night">Jazz Night</option>
+      <option value="Workshop on Baking">Workshop on Baking</option>
+    </select>
+
+    <button type="submit" id="debugSubmit">Submit (debug)</button>
+  </form>
+
+  <div class="log" id="debugLog">(no logs yet)</div>
+
+  <script src="13_debugging_testing.js"></script>
+</body>
+</html>
+

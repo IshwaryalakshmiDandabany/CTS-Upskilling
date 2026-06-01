@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JS Exercise 11 - Forms</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;margin:1.25rem;line-height:1.5}
+    form{max-width:620px;background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:1rem}
+    label{display:block;font-weight:700;margin-top:.75rem}
+    input,select{width:100%;padding:.6rem;margin-top:.35rem;border:1px solid #d1d5db;border-radius:10px;font-size:1rem}
+    .error{color:#b91c1c;margin-top:.35rem;font-weight:700}
+    button{margin-top:1rem;padding:.75rem 1rem;border:0;border-radius:10px;background:#0b57d0;color:#fff;font-weight:800;cursor:pointer}
+    button:hover{background:#094aa8}
+    .success{margin-top:1rem;padding:.75rem 1rem;background:#dcfce7;border:1px solid #86efac;border-radius:12px;font-weight:800}
+  </style>
+</head>
+<body>
+  <h1>Local Community Event Portal - JS Exercise 11</h1>
+
+  <form id="registrationForm">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+      <div>
+        <label for="name">Name</label>
+        <input name="name" id="name" type="text" placeholder="Your full name" required />
+        <div id="nameError" class="error" style="display:none">Name is required.</div>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input name="email" id="email" type="email" placeholder="name@example.com" required />
+        <div id="emailError" class="error" style="display:none">Enter a valid email.</div>
+      </div>
+    </div>
+
+    <label for="selectedEvent">Selected Event</label>
+    <select id="selectedEvent" name="selectedEvent" required>
+      <option value="">Select...</option>
+      <option value="Jazz Night">Jazz Night</option>
+      <option value="Workshop on Baking">Workshop on Baking</option>
+      <option value="Park Yoga">Park Yoga</option>
+    </select>
+    <div id="eventError" class="error" style="display:none">Please choose an event.</div>
+
+    <button type="submit">Submit Registration</button>
+  </form>
+
+  <div id="result" class="success" style="display:none"></div>
+
+  <script src="11_forms_working_with_forms.js"></script>
+</body>
+</html>
+
