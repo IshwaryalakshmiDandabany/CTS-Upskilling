@@ -1,0 +1,16 @@
+-- Exercise 8: Sessions per Upcoming Event
+-- Display all upcoming events with the count of sessions scheduled for them.
+
+SELECT
+  e.event_id,
+  e.title,
+  e.city,
+  e.start_date,
+  COUNT(s.session_id) AS sessions_count
+FROM Events e
+LEFT JOIN Sessions s
+  ON s.event_id = e.event_id
+WHERE e.status = 'upcoming'
+GROUP BY e.event_id, e.title, e.city, e.start_date
+ORDER BY e.start_date ASC;
+
