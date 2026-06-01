@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Gallery</title>
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; margin: 1.25rem; line-height: 1.5; }
+    table { border-collapse: collapse; width: 100%; max-width: 900px; }
+    caption { caption-side: top; font-weight: 800; margin-bottom: 0.75rem; }
+    td { padding: 0.75rem; text-align: center; }
+    img.eventImage { border: 4px solid #0b57d0; border-radius: 10px; width: 100%; max-width: 220px; height: 140px; object-fit: cover; }
+    .eventTitle { font-weight: 700; margin-top: 0.5rem; }
+    .eventCaption { color: #374151; font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav aria-label="Portal navigation">
+    <a href="3_Welcome_Message_with_Styling_and_ID_Class.html">Previous: Welcome banner</a>
+  </nav>
+
+  <!-- Main -->
+  <main>
+    <h1>Community Events Gallery</h1>
+
+    <table>
+      <caption>Highlights from past community events</caption>
+      <tbody>
+        <tr>
+          <td>
+            <img class="eventImage" src="https://picsum.photos/seed/park1/400/260" alt="Community Park Cleanup" title="Park Cleanup" />
+            <div class="eventTitle">Park Cleanup</div>
+            <div class="eventCaption">Volunteers gathered to keep the neighborhood green.</div>
+          </td>
+          <td>
+            <img class="eventImage" src="https://picsum.photos/seed/meetup2/400/260" alt="Local Meet and Greet" title="Meet & Greet" />
+            <div class="eventTitle">Meet &amp; Greet</div>
+            <div class="eventCaption">Residents connected with community leaders.</div>
+          </td>
+          <td>
+            <img class="eventImage" src="https://picsum.photos/seed/library3/400/260" alt="Library Story Hour" title="Story Hour" />
+            <div class="eventTitle">Library Story Hour</div>
+            <div class="eventCaption">Families enjoyed stories and activities together.</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img class="eventImage" src="https://picsum.photos/seed/health4/400/260" alt="Community Health Screening" title="Health Screening" />
+            <div class="eventTitle">Health Screening</div>
+            <div class="eventCaption">Free checkups and wellness advice for residents.</div>
+          </td>
+          <td>
+            <img class="eventImage" src="https://picsum.photos/seed/cultural5/400/260" alt="Cultural Festival" title="Cultural Festival" />
+            <div class="eventTitle">Cultural Festival</div>
+            <div class="eventCaption">Music, food, and performances celebrated local culture.</div>
+          </td>
+          <td>
+            <img class="eventImage" src="https://picsum.photos/seed/food6/400/260" alt="Food Drive Event" title="Food Drive" />
+            <div class="eventTitle">Food Drive</div>
+            <div class="eventCaption">Donations supported families in need.</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <small>© Local City Council</small>
+  </footer>
+</body>
+</html>
+

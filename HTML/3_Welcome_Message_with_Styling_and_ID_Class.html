@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome Banner Styling</title>
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; margin: 1.25rem; line-height: 1.5; }
+    #welcomeBanner {
+      background: #cfe8ff;
+      border: 1px solid #86bfff;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    .highlight { font-weight: 800; background: #fff3b0; padding: 0.15rem 0.35rem; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav aria-label="Portal navigation">
+    <a href="2_Navigation_and_Linking.html">Back to navigation demo</a>
+  </nav>
+
+  <!-- Main -->
+  <main>
+    <h1>Welcome</h1>
+
+    <div id="welcomeBanner">
+      <p>
+        Welcome back, <span class="highlight">Ava</span>! You’re logged in.
+      </p>
+      <p>
+        Special offer: <span style="color: red; font-weight: bold;">50% off</span> on community workshops this week.
+      </p>
+      <p class="highlight">Enjoy your time in the community!</p>
+    </div>
+
+    <p>
+      This exercise uses <code>id</code> via <code>#welcomeBanner</code>, an inline-styled <code><span></code>,
+      and a shared <code>.highlight</code> CSS class.
+    </p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <small>© Local City Council</small>
+  </footer>
+</body>
+</html>
+

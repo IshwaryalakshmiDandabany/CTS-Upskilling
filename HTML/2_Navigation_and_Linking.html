@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navigation and Linking</title>
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; line-height: 1.5; margin: 1.25rem; }
+    nav { position: sticky; top: 0; background: #fff; padding: 0.5rem 0; border-bottom: 1px solid #e5e7eb; }
+    nav a { margin-right: 1rem; text-decoration: none; color: #0b57d0; font-weight: 600; }
+    nav a:hover { text-decoration: underline; }
+    section { padding-top: 1.25rem; margin-top: 1rem; border-top: 1px dashed #d1d5db; }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav aria-label="Portal navigation">
+    <a href="#home">Home</a>
+    <a href="#events">Events</a>
+    <a href="#contact">Contact</a>
+    <a href="help.html" target="_blank" rel="noopener noreferrer">Help</a>
+  </nav>
+
+  <!-- Main -->
+  <main>
+    <section id="home">
+      <h1>Home</h1>
+      <p>Welcome to the Local Community Event Portal.</p>
+    </section>
+
+    <section id="events">
+      <h1>Events</h1>
+      <p>Browse local events and find the next community activity near you.</p>
+    </section>
+
+    <section id="contact">
+      <h1>Contact</h1>
+      <p>Need assistance? Reach out to the city council.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <small>© Local City Council</small>
+  </footer>
+</body>
+</html>
+

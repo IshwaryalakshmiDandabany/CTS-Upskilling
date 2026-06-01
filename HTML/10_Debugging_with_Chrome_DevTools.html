@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Debugging with Chrome DevTools</title>
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; margin: 1.25rem; line-height: 1.5; }
+    .panel { max-width: 760px; border: 1px solid #e5e7eb; border-radius: 12px; padding: 1rem; }
+    .target { padding: 0.75rem; background: #fff7ed; border: 1px solid #fed7aa; border-radius: 10px; }
+    .log { background: #0b1220; color: #e5e7eb; padding: 0.75rem; border-radius: 10px; font-family: Consolas, monospace; white-space: pre-wrap; }
+    button { background: #0b57d0; color: #fff; border: 0; border-radius: 10px; padding: 0.75rem 1rem; font-weight: 900; cursor: pointer; margin-top: 0.75rem; }
+    button:hover { background: #094aa8; }
+  </style>
+</head>
+<body>
+  <h1>Debugging Demo</h1>
+
+  <div class="panel">
+    <h2>Inspect Element (modify styles live)</h2>
+    <div id="targetBox" class="target">
+      This box is intentionally simple so you can use <strong>Inspect Element</strong> to tweak styles.
+    </div>
+
+    <h2 style="margin-top: 1rem;">Console logs + breakpoints</h2>
+    <p class="hint">Open Chrome DevTools → Console. Click the button to generate logs and run code.</p>
+
+    <button type="button" onclick="runDebugDemo()">Run Debug Demo</button>
+
+    <h3 style="margin-top: 1rem;">Last output</h3>
+    <div id="logBox" class="log" aria-live="polite">(no logs yet)</div>
+  </div>
+
+  <script>
+    const logBox = document.getElementById('logBox');
+    function appendLog(line) {
+      logBox.textContent += `\n${line}`;
+    }
+
+    function runDebugDemo() {
+      // Variables you can watch in the debugger
+      const user = { name: 'Sam', role: 'Resident' };
+      const events = [ 'Park Cleanup', 'Library Story Hour', 'Food Drive' ];
+      const selectedIndex = 1;
+
+      logBox.textContent = '--- debug run ---';
+      console.log('Debug start');
+      appendLog('user = ' + JSON.stringify(user));
+      console.log('user object:', user);
+
+      // Example of a spot for breakpoints
+      let selectedEvent = events[selectedIndex];
+      console.log('selectedEvent:', selectedEvent);
+      appendLog('selectedEvent = ' + selectedEvent);
+
+      // Intentionally harmless conditional for breakpoints/stepping
+      if (!selectedEvent) {
+        console.warn('No event selected. Check selectedIndex.');
+        appendLog('WARNING: selectedEvent was falsy');
+      } else {
+        appendLog('OK: selectedEvent is truthy');
+      }
+
+      // Another console message
+      console.info('Debug complete');
+      appendLog('--- done ---');
+    }
+  </script>
+</body>
+</html>
+
