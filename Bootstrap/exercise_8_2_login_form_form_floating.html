@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap 5 - Exercise 8.2 Login Form Floating Labels</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+  <div class="container py-5">
+    <h1 class="h3 mb-3">Exercise 8.2: Style a login form using <code>form-floating</code></h1>
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-7 col-lg-5">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <form>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" />
+                <label for="email">Email address</label>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="password" placeholder="Password" />
+                <label for="password">Password</label>
+              </div>
+
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="remember" checked />
+                <label class="form-check-label" for="remember">Remember me</label>
+              </div>
+
+              <button class="btn btn-primary w-100" type="button">Login</button>
+
+              <div class="text-center mt-3 small text-muted">
+                New here? <a href="#" class="link-primary">Create an account</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="alert alert-secondary mt-4 mb-0">
+      Floating labels require <code>form-floating</code> wrapper + a <code>label</code>.
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

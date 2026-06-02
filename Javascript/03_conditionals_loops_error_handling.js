@@ -1,8 +1,5 @@
-// 3) Conditionals, Loops, and Error Handling
 const listEl = document.getElementById('eventList');
 const btn = document.getElementById('tryRegisterBtn');
-
-// Simulated event dataset
 const events = [
   { name: 'Past Event', date: '2020-01-01', seats: 10, location: 'Local' },
   { name: 'Full Event', date: '2099-02-10', seats: 0, location: 'Downtown' },
